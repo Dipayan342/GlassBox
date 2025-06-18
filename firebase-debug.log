@@ -1,0 +1,46 @@
+[debug] [2025-06-16T15:28:48.723Z] ----------------------------------------------------------------------
+[debug] [2025-06-16T15:28:48.727Z] Command:       /nix/store/ixbb20farqh1f4fqbmsn6b1ixn8mc8ij-nodejs-20.18.1/bin/node /home/.npm/_npx/ba4f1959e38407b5/node_modules/.bin/firebase init dataconnect --project monospace-10
+[debug] [2025-06-16T15:28:48.728Z] CLI Version:   14.7.0
+[debug] [2025-06-16T15:28:48.729Z] Platform:      linux
+[debug] [2025-06-16T15:28:48.729Z] Node Version:  v20.18.1
+[debug] [2025-06-16T15:28:48.729Z] Time:          Mon Jun 16 2025 15:28:48 GMT+0000 (Coordinated Universal Time)
+[debug] [2025-06-16T15:28:48.730Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-06-16T15:28:48.736Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2025-06-16T15:28:48.979Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-06-16T15:28:48.980Z] > authorizing via signed-in user (dipayanguha183@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /home/user/glassbox-master
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2025-06-16T15:28:48.987Z] Using project from CLI flag: monospace-10
+[debug] [2025-06-16T15:28:48.988Z] No OAuth tokens found
+[debug] [2025-06-16T15:28:48.988Z] No OAuth tokens found
+[debug] [2025-06-16T15:28:48.988Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-06-16T15:28:48.989Z] > authorizing via signed-in user (dipayanguha183@gmail.com)
+[debug] [2025-06-16T15:28:48.989Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/monospace-10 [none]
+[debug] [2025-06-16T15:28:49.389Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
+[debug] [2025-06-16T15:28:49.390Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}
+[debug] [2025-06-16T15:28:49.430Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/monospace-10 403
+[debug] [2025-06-16T15:28:49.433Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/monospace-10 {"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}}
+[debug] [2025-06-16T15:28:49.435Z] Request to https://firebase.googleapis.com/v1beta1/projects/monospace-10 had HTTP Error: 403, The caller does not have permission
+[debug] [2025-06-16T15:28:49.438Z] FirebaseError: Request to https://firebase.googleapis.com/v1beta1/projects/monospace-10 had HTTP Error: 403, The caller does not have permission
+    at responseToError (/home/.npm/_npx/ba4f1959e38407b5/node_modules/firebase-tools/lib/responseToError.js:52:12)
+    at RetryOperation._fn (/home/.npm/_npx/ba4f1959e38407b5/node_modules/firebase-tools/lib/apiv2.js:312:77)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[error] 
+[error] Error: Failed to get Firebase project monospace-10. Please make sure the project exists and your account has permission to access it.
